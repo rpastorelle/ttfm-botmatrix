@@ -1,4 +1,4 @@
-var Bot = require('../index');
+var Bot = require('../node_modules/ttapi');
 var AUTH = 'auth+live+';
 var ROOMID = 'FakeRoomID4cc82f72594d88';
 var TopBotName = 'will be set to the first dj used in the list';
