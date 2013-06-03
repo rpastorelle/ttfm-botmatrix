@@ -76,22 +76,22 @@ function respondToSpeak (caller, speakData) {
 				bootEveryone(caller);
 				caller.speak('EVERYONE GET DOWN THIS IS A STICK UP!!');
 				setTimeout( function() {
-					caller.speak('HA! Dudes, I was just messin\' around.');
-				}, 1000);
+					caller.speak('HA! Do not call the cops, I was just messin\' around.');
+				}, 3000);
 				break;
 			case /^[\/#!]*boo/i.test(t): // Respond to either "#boo" or "!boo"
 				caller.speak(getABooResponse(speakData.name));
 				break;
-			case /^push it/i.test(t): // Respond to "push it bot"
+			case /^push it/i.test(t): // Respond to "push it"
 				caller.playlistSwitch("pushit");
 				caller.addDj();
 				bootEveryone(caller);
 				caller.speak('Ahhh!! Push It!');
 				break;
-			case /^get down/i.test(t): // respond to "go away bot"
+			case /^get down/i.test(t): // respond to "get down"
 				caller.remDj(TopBotID);
 				break;
-			case /^play idle/i.test(t): // Respond to "push it bot"
+			case /^play idle/i.test(t): // Respond to "play idle"
 				caller.playlistSwitch("idle");
 				caller.addDj();
 				break;
